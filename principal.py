@@ -19,7 +19,7 @@ from entero_romano import*
 #miobjeto = NuevoObjeto()
 #print(miobjeto.pie.forma)
 #var2 = miobjeto.pie.OlerMal()
-#print(var2)
+#print(var2) ahjkahkjahlak
 
 num = Romano(int(input("Insertar número entero: ")))
 print(num.cambiar())
