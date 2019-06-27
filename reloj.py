@@ -1,4 +1,4 @@
-# SERGIO PADRON CRUZ
+# SERGIO PADRÓN CRUZ
 
 class Reloj(object):
     hora = 0
