@@ -1,7 +1,6 @@
 from reloj import*
 
 puntualidad = Reloj()
-
 comprobar = False
 while comprobar == False:
     hora = int(input("Dame la hora: "))
