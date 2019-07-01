@@ -59,7 +59,12 @@ class Libro(object):
             return False
         else:
 
-            sumaImpar = (isbn[0] + isbn[2] + isbn[4] + isbn[6] + isbn[8] + isbn[10] + isbn[12])
+            sumaImpar = (isbn[0] + isbn[2] + isbn[4] + isbn[6] + isbn[8] + isbn[10])
             sumaPar = (isbn[1] + isbn[3] + isbn[5] + isbn[7] + isbn[9] + isbn[11])
-            total = sumaImpar + (sumaPar * 3)
-            return True
+            suma = sumaImpar + (sumaPar * 3)
+            num = suma % 10
+            if isbn[12] == 0:
+                d13 = 0
+            else:
+                d13 = 10 - num
+
