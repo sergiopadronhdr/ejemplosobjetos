@@ -14,8 +14,8 @@ class Base_Exponente(object):
     def set_exponente(self, valor2):
         self.__exponente = valor2
 
-    def pow(self, bBase, eExp):
-        if eExp <= 0:
+    def pow(self, b, exp):
+        if exp <= 0:
             return 1
         else:
-            return bBase * pow(bBase, eExp-1)
+            return b * pow(b, exp-1)
