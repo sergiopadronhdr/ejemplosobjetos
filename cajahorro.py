@@ -11,8 +11,10 @@ class Cuenta(object):
     __cantidad = 0
 
     def getdatos(self):
-        return self.__titular
         return self.__cantidad
+
+    def getdatos2(self):
+        return self.__titular
 
     def setdatos(self, valor, valor2):
         self.__titular = valor
@@ -22,6 +24,7 @@ class Cuenta(object):
         print("Titular: " + self.__titular + ". Cantidad: " + str(self.__cantidad) + " €")
 
 class PlazoAhorro(Cuenta):
+
     def aconsejar(self):
         print("Ahorrar es bien")
 
@@ -30,9 +33,11 @@ class PlazoFijo(Cuenta):
     __plazo = 0
     __interes = 0
 
-    def getdatos2(self):
-        return self.__plazo
+    def getdatos3(self):
         return self.__interes
+
+    def getdatos4(self):
+        return self.__plazo
 
     def setdatos2(self, valor3, valor4):
         self.__plazo = valor3
@@ -43,6 +48,6 @@ class PlazoFijo(Cuenta):
 
     def mostrar_informacion(self):
         print("Titular: " + self.__titular)
-        print("Plazo: " + str(self.__plazo))
-        print("Interés: " + str(self.__interes))
-        print("Total interés: " + str(self.__total))
+        print("Plazos: " + str(self.__plazo))
+        print("Interés: " + str(self.__interes) + " %")
+        print("Total interés: " + str(self.__total) + " €")

@@ -7,7 +7,7 @@ class Alumnado(object):
     __nombre = ""
     __nota = 0
 
-    def getdatos(self, nombre, nota):
+    def getdatos(self):
         return self.__nombre
         return self.__nota
 
@@ -15,8 +15,8 @@ class Alumnado(object):
         self.__nombre = valor
         self.__nota = valor2
 
-    def notamedia(self, valor2, valor):
-        if valor2 < 5:
-            print(valor + " tiene una nota de " + str(valor2) + " y está SUSPENDIDO")
+    def notamedia(self):
+        if self.__nota < 5:
+            print(self.__nombre + " tiene una nota de " + str(self.__nota) + " y está SUSPENDIDO")
         else:
-            print(valor + " tiene una nota de " + str(valor2) + " y está APROBADO")
+            print(self.__nombre + " tiene una nota de " + str(self.__nota) + " y está APROBADO")
